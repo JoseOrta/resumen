@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Nombre | Resumen Profesional</title>
+    <title>José Orta | Front-End Developer (Vue.js)</title>
     <style>
         :root {
             --bg-color: #f8fafc;
             --text-color: #1e293b;
-            --accent-color: #2563eb;
+            --accent-color: #42b883; /* Vue.js Green */
+            --accent-hover: #33a06f;
             --card-bg: #ffffff;
             --border-color: #e2e8f0;
         }
@@ -23,45 +24,49 @@
         }
 
         .container {
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto;
             background: var(--card-bg);
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
             border: 1px solid var(--border-color);
         }
 
         header {
             text-align: center;
             border-bottom: 2px solid var(--border-color);
-            padding-bottom: 20px;
+            padding-bottom: 25px;
             margin-bottom: 30px;
         }
 
         h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: var(--text-color);
+            letter-spacing: -0.5px;
         }
 
         .subtitle {
             color: var(--accent-color);
-            font-weight: 600;
+            font-weight: 700;
             margin-top: 5px;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .contact-links {
             margin-top: 15px;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
 
         .contact-links a {
-            color: var(--text-color);
+            color: #64748b;
             text-decoration: none;
             margin: 0 10px;
             font-weight: 500;
+            transition: color 0.2s;
         }
 
         .contact-links a:hover {
@@ -69,41 +74,85 @@
         }
 
         section {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         h2 {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             color: var(--text-color);
             border-left: 4px solid var(--accent-color);
-            padding-left: 10px;
-            margin-bottom: 15px;
+            padding-left: 12px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            color: #475569;
+            font-size: 1.05rem;
         }
 
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 12px;
             padding: 0;
             list-style: none;
         }
 
         .skills-list li {
-            background-color: var(--bg-color);
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 0.9rem;
+            background-color: #f1f5f9;
+            color: #334155;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.95rem;
             border: 1px solid var(--border-color);
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        
+        .skills-list li:hover {
+            border-color: var(--accent-color);
+            background-color: #f0fdf4;
+            color: var(--accent-hover);
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+
+        .job-meta {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 8px;
             font-weight: 500;
         }
 
-        .project-item {
-            margin-bottom: 15px;
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .project-card {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-color);
         }
 
         .project-title {
             font-weight: bold;
-            color: var(--accent-color);
+            color: var(--text-color);
+            display: block;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -111,12 +160,13 @@
 
 <div class="container">
     <header>
-        <h1>Tu Nombre Completo</h1>
-        <div class="subtitle">Front-End Developer | Especialista en Datos</div>
+        <h1>José Orta</h1>
+        <div class="subtitle">Front-End Developer | Vue.js </div>
         <div class="contact-links">
-            <a href="mailto:tu-correo@email.com">tu-correo@email.com</a> | 
-            <a href="https://linkedin.com/in/tu-usuario" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+            <a href="mailto:joseanibalorta@gmail.com">joseanibalorta@gmail.com</a> | 
+            <a href="tel:+5804120713774">+58 0412-0713774</a> | 
+            <a href="https://linkedin.com/in/jose-orta-in/" target="_blank">LinkedIn</a> | 
+            <a href="https://ortaweb.com.es" target="_blank">Portfolio Web</a>
         </div>
     </header>
 
@@ -124,30 +174,71 @@
         <section>
             <h2>Perfil Profesional</h2>
             <p>
-                Desarrollador Front-End enfocado en construir interfaces web dinámicas, eficientes y centradas en el usuario. Especializado en JavaScript moderno y frameworks como React, con experiencia en el desarrollo de aplicaciones multiplataforma y automatización de procesos.
+                Ingeniero de Sistemas y Desarrollador Front-End especializado en el ecosistema <strong>Vue.js</strong>. Construyo interfaces dinámicas, eficientes y centradas en el usuario. Combino bases sólidas en JavaScript, HTML5 y CSS3 con un perfil analítico forjado en el área de infraestructura técnica. Integro de manera activa herramientas de Inteligencia Artificial en mi flujo de trabajo, logrando maximizar mi rendimiento y velocidad de desarrollo en un 60%. Enfocado en aportar código limpio y soluciones escalables dentro de equipos ágiles. Un gramo de acción vale más que mil de intención.
             </p>
         </section>
 
         <section>
-            <h2>Habilidades Clave</h2>
+            <h2>Stack Tecnológico</h2>
             <ul class="skills-list">
                 <li>JavaScript (ES6+)</li>
-                <li>React / HTML5 / CSS3</li>
-                <li>Desarrollo Multiplataforma (Electron)</li>
-                <li>Automatización (Bash / Python)</li>
-                <li>Gestión de Datos (Excel / SQL)</li>
-                <li>Entornos Linux (Debian / Ubuntu)</li>
+                <li>Vue.js 3 & Vue Router</li>
+                <li>HTML5 Semántico</li>
+                <li>CSS3 & Tailwind CSS / Bootstrap</li>
+                <li>Consumo de APIs REST</li>
+                <li>Git & GitHub</li>
+                <li>Node.js (Básico)</li>
+                <li>Metodologías Ágiles (Scrum)</li>
             </ul>
         </section>
 
         <section>
-            <h2>Proyectos Destacados</h2>
-            <div class="project-item">
-                <span class="project-title">Aplicaciones de Escritorio Multiplataforma:</span> Desarrolladas con Electron para la gestión optimizada de notas y conexiones tácticas seguras.
+            <h2>Proyectos Destacados (Desarrollo Independiente)</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <span class="project-title">Orta Note & Orta SSH Tactical Connect</span>
+                    <p style="margin: 0; font-size: 0.95rem;">Aplicaciones de escritorio multiplataforma construidas con el framework Electron. Demuestran dominio en la manipulación avanzada de JavaScript y la creación de interfaces utilitarias eficientes para el usuario final.</p>
+                </div>
+                <div class="project-card">
+                    <span class="project-title">Dashboard NexoVisor</span>
+                    <p style="margin: 0; font-size: 0.95rem;">Panel de visualización interactivo para el monitoreo de salud de servidores, integrando recolección de datos y renderizado de métricas en tiempo real.</p>
+                </div>
             </div>
-            <div class="project-item">
-                <span class="project-title">Dashboards de Monitoreo:</span> Implementación de paneles interactivos de métricas y rendimiento de infraestructura utilizando Bash.
+        </section>
+
+        <section>
+            <h2>Experiencia Laboral Web & Técnica</h2>
+            
+            <div class="experience-item">
+                <div class="job-title">Desarrollador Web - Freelance</div>
+                <div class="job-meta">Ene. 2022 - Presente | Remoto</div>
+                <ul style="margin-top: 5px; color: #475569; font-size: 0.95rem; padding-left: 20px;">
+                    <li>Desarrollo integral de sitios e interfaces web responsivas.</li>
+                    <li>Implementación de soluciones utilizando HTML, CSS, JavaScript, Bootstrap y Node.js.</li>
+                    <li>Control de versiones con Git y gestión de despliegues.</li>
+                </ul>
             </div>
+
+            <div class="experience-item">
+                <div class="job-title">Analista de Soporte Técnico Web (Nivel 1) - Bonstato, C.A</div>
+                <div class="job-meta">Nov. 2018 - Jul. 2019 | Lecherías, Venezuela</div>
+                <ul style="margin-top: 5px; color: #475569; font-size: 0.95rem; padding-left: 20px;">
+                    <li>Despliegue y configuración inicial de sitios web y gestores de contenido.</li>
+                    <li>Administración de cPanel y monitoreo de servidores de hosting.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formación y Certificaciones</h2>
+            <div class="experience-item" style="margin-bottom: 10px;">
+                <div class="job-title">Ingeniería de Sistemas</div>
+                <div class="job-meta">Instituto Universitario Politécnico Santiago Mariño | 2011 - 2018</div>
+            </div>
+            <ul style="margin-top: 5px; color: #475569; font-size: 0.95rem; padding-left: 20px;">
+                <li>Aplicación Práctica de la Metodología Scrum (Sigma).</li>
+                <li>JavaScript, HTML, CSS, Git, Diseño de APIs REST (W3Schools).</li>
+            </ul>
         </section>
     </main>
 </div>
