@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre | Resumen Profesional</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --accent-color: #2563eb;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: var(--text-color);
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-top: 5px;
+            font-size: 1.1rem;
+        }
+
+        .contact-links {
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .contact-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        .contact-links a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--text-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background-color: var(--bg-color);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+            font-weight: 500;
+        }
+
+        .project-item {
+            margin-bottom: 15px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Tu Nombre Completo</h1>
+        <div class="subtitle">Front-End Developer | Especialista en Datos</div>
+        <div class="contact-links">
+            <a href="mailto:tu-correo@email.com">tu-correo@email.com</a> | 
+            <a href="https://linkedin.com/in/tu-usuario" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Perfil Profesional</h2>
+            <p>
+                Desarrollador Front-End enfocado en construir interfaces web dinámicas, eficientes y centradas en el usuario. Especializado en JavaScript moderno y frameworks como React, con experiencia en el desarrollo de aplicaciones multiplataforma y automatización de procesos.
+            </p>
+        </section>
+
+        <section>
+            <h2>Habilidades Clave</h2>
+            <ul class="skills-list">
+                <li>JavaScript (ES6+)</li>
+                <li>React / HTML5 / CSS3</li>
+                <li>Desarrollo Multiplataforma (Electron)</li>
+                <li>Automatización (Bash / Python)</li>
+                <li>Gestión de Datos (Excel / SQL)</li>
+                <li>Entornos Linux (Debian / Ubuntu)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Proyectos Destacados</h2>
+            <div class="project-item">
+                <span class="project-title">Aplicaciones de Escritorio Multiplataforma:</span> Desarrolladas con Electron para la gestión optimizada de notas y conexiones tácticas seguras.
+            </div>
+            <div class="project-item">
+                <span class="project-title">Dashboards de Monitoreo:</span> Implementación de paneles interactivos de métricas y rendimiento de infraestructura utilizando Bash.
+            </div>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
